@@ -43,7 +43,7 @@ jobs:
         run: |
           set -euo pipefail
           version="${{ github.event.inputs.tag || github.ref_name }}"
-          bundle="potoo-visualg-interpreter-${version}-${{ matrix.target }}"
+          bundle="potoo-portugol-visualg-interpreter-${version}-${{ matrix.target }}"
           mkdir -p "$bundle"
           cp "target/release/potoo-visualg" "$bundle/"
           tar -czf "$bundle.tar.gz" "$bundle"
@@ -59,7 +59,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: release-${{ matrix.target }}
-          path: potoo-visualg-interpreter-*-${{ matrix.target }}.*
+          path: potoo-portugol-visualg-interpreter-*-${{ matrix.target }}.*
           if-no-files-found: error
 
   publish:
