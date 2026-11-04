@@ -52,7 +52,7 @@ jobs:
         shell: pwsh
         run: |
           $version = "${{ github.event.inputs.tag || github.ref_name }}"
-          $bundle = "potoo-visualg-interpreter-$version-${{ matrix.target }}"
+          $bundle = "potoo-portugol-visualg-interpreter-$version-${{ matrix.target }}"
           New-Item -ItemType Directory -Force $bundle | Out-Null
           Copy-Item "target/release/potoo-visualg.exe" -Destination $bundle
           Compress-Archive -Path $bundle -DestinationPath "$bundle.zip"
