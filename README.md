@@ -4,6 +4,12 @@ A reusable Rust interpreter library for the classic Portugol VisuAlg 3.0.5.2 pse
 
 The compatibility target is classic VisuAlg 3.0.5.2. The linked online archive labels the manual pages 3.0.5.2, while the built-in functions page identifies its catalog as VisuAlg 2.0, so the source version is not fully consistent. Compatibility testing is ongoing; the crate does not invoke or bundle the original VisuAlg application.
 
+## Original language references
+
+- [VisuAlg 3.0 project archive and documentation files](https://sourceforge.net/projects/visualg30/files/)
+
+The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
+
 ## Source example
 
 ```alg
