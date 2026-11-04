@@ -4,6 +4,12 @@ A reusable Rust interpreter library for the classic Portugol VisuAlg 3.0.5.2 pse
 
 The compatibility target is classic VisuAlg 3.0.5.2. The linked online archive labels the manual pages 3.0.5.2, while the built-in functions page identifies its catalog as VisuAlg 2.0, so the source version is not fully consistent. Compatibility testing is ongoing; the crate does not invoke or bundle the original VisuAlg application.
 
+## Original language references
+
+- [VisuAlg 3.0 project archive and documentation files](https://sourceforge.net/projects/visualg30/files/)
+
+The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
+
 ## Source example
 
 ```alg
@@ -182,6 +188,10 @@ potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-v
 
 The library API lets Rust applications provide their own `RuntimeIo` implementation.
 
-## DOI
+## DOI and citation
 
-A stable Figshare DOI will be added when the first public release is published.
+DOI: [10.6084/m9.figshare.34915245](https://doi.org/10.6084/m9.figshare.34915245)
+
+Suggested reference (ABNT NBR 6023:2018):
+
+> NASCIMENTO, Diego Pereira do. *Portugol VisuAlg interpreter v0.1.0*. 2026. Programa de computador. Disponível em: https://doi.org/10.6084/m9.figshare.34915245. Acesso em: 4 nov. 2026.
