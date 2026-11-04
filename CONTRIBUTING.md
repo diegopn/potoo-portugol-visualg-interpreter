@@ -1,6 +1,6 @@
-# Contributing to potoo-visualg-interpreter
+# Contributing to Portugol VisuAlg
 
-Contributions to the VisuAlg interpreter, its tests, and its documentation are welcome.
+Contributions to the Portugol VisuAlg interpreter, its tests, and its documentation are welcome.
 
 ## Report a bug
 
