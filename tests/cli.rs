@@ -2,17 +2,17 @@ use std::{
     fs,
     io::Write,
     process::{Command, Output, Stdio},
-    time::{SystemTime, UNIX_EPOCH},
+    sync::atomic::{AtomicU64, Ordering},
 };
+
+static NEXT_TEMP_FILE: AtomicU64 = AtomicU64::new(0);
 
 const CLI: &str = env!("CARGO_BIN_EXE_potoo-visualg");
 
 fn run(source: &str, input: &str) -> Output {
-    let unique = SystemTime::now()
-        .duration_since(UNIX_EPOCH)
-        .unwrap()
-        .as_nanos();
-    let path = std::env::temp_dir().join(format!("potoo-visualg-{unique}.alg"));
+    let unique = NEXT_TEMP_FILE.fetch_add(1, Ordering::Relaxed);
+    let process = std::process::id();
+    let path = std::env::temp_dir().join(format!("potoo-visualg-{process}-{unique}.alg"));
     fs::write(&path, source).unwrap();
 
     let mut child = Command::new(CLI)
