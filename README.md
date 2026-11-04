@@ -19,7 +19,7 @@ Add the crate as a dependency:
 
 ~~~toml
 [dependencies]
-potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-visualg-interpreter.git", tag = "v0.1.0" }
+potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-visualg-interpreter.git", rev = "515d415298a4ce336338584177b7905d263dfe76" }
 ~~~
 
 Implement RuntimeIo to provide input and output, then call execute:
@@ -106,7 +106,7 @@ The terminal runner provides standard input/output. `arquivo` data-file commands
 
 ## Install a prebuilt runner
 
-Download the archive for your system and `SHA256SUMS` from the [latest GitHub Release](https://github.com/diegopn/potoo-portugol-visualg-interpreter/releases/latest). The first release is tagged `v0.1.0` and uses these asset names:
+Download the archive for your system and `SHA256SUMS` from the [latest GitHub Release](https://github.com/diegopn/potoo-portugol-visualg-interpreter/releases/latest). Binary releases are not published yet. The planned first release will be tagged `v0.1.0`; its release workflow is configured to produce these asset names:
 
 | System | Archive |
 | --- | --- |
@@ -115,7 +115,7 @@ Download the archive for your system and `SHA256SUMS` from the [latest GitHub Re
 | macOS Intel | `potoo-portugol-visualg-interpreter-v0.1.0-x86_64-apple-darwin.tar.gz` |
 | macOS Apple silicon | `potoo-portugol-visualg-interpreter-v0.1.0-aarch64-apple-darwin.tar.gz` |
 
-The Linux archive targets glibc 2.35 or later and is built on Ubuntu 22.04. Linux x86_64 is the only target verified in this source snapshot; Windows and macOS builds and CLI tests must pass on native runners before their release archives are published.
+CI passes on Linux x86_64, Windows x86_64, macOS Intel, and macOS Apple silicon. The release workflow is configured to build archives for these four targets; binary assets have not been published yet.
 
 ### Linux x86_64
 
@@ -170,14 +170,14 @@ Replace `<target>` with `x86_64-apple-darwin` or `aarch64-apple-darwin`. Add it 
 With Rust 1.93 or later and network access, Cargo can install the command directly from its tagged source:
 
 ```sh
-cargo install --git https://github.com/diegopn/potoo-portugol-visualg-interpreter.git --tag v0.1.0 --bin potoo-visualg
+cargo install --git https://github.com/diegopn/potoo-portugol-visualg-interpreter.git --rev 515d415298a4ce336338584177b7905d263dfe76 --bin potoo-visualg
 ```
 
 ## Use as a Rust library
 
 ```toml
 [dependencies]
-potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-visualg-interpreter.git", tag = "v0.1.0" }
+potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-visualg-interpreter.git", rev = "515d415298a4ce336338584177b7905d263dfe76" }
 ```
 
 The library API lets Rust applications provide their own `RuntimeIo` implementation.
