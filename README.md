@@ -142,7 +142,7 @@ Invoke-WebRequest "$release/$asset" -OutFile $asset
 Invoke-WebRequest "$release/SHA256SUMS" -OutFile SHA256SUMS
 Get-FileHash ".\$asset" -Algorithm SHA256 # compare with the matching SHA256SUMS entry
 Expand-Archive ".\$asset" -DestinationPath .\potoo-portugol-visualg-interpreter
-.\potoo-visualg-interpreter\potoo-portugol-visualg-interpreter-v0.1.0-x86_64-pc-windows-msvc\potoo-visualg.exe .\example.alg
+.\potoo-portugol-visualg-interpreter\potoo-portugol-visualg-interpreter-v0.1.0-x86_64-pc-windows-msvc\potoo-visualg.exe .\example.alg
 ```
 
 To run `potoo-visualg.exe` from any folder, add its extracted directory to your user `PATH` in Windows Environment Variables.
