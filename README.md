@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://diegopn.github.io/potoo-site/src/assets/images/language-interpreter-icon.svg" alt="Potoo IDE language interpreter icon" width="120" />
+</p>
+
 <h1 align="center">Portugol VisuAlg Interpreter</h1>
 
 <p align="center">A Rust interpreter library and CLI for the classic VisuAlg 3.0.5.2 pseudolanguage.</p>
