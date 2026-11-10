@@ -19,6 +19,8 @@
   <img alt="CLI" src="https://img.shields.io/badge/CLI-6A4C93?style=for-the-badge">
 </p>
 
+Originally developed as part of the Potoo IDE project, this interpreter is an independent Rust software package intended to be distributed separately from the IDE. It can be embedded as a library in other Rust projects or run as a standalone command-line tool on Linux, macOS, and Windows.
+
 The crate has no third-party dependencies and can be embedded in Rust applications. The compatibility target is classic VisuAlg 3.0.5.2. The linked online archive labels its manual pages 3.0.5.2, while the built-in functions page identifies its catalog as VisuAlg 2.0, so the source version is not fully consistent. Compatibility testing is ongoing; the crate does not invoke or bundle the original VisuAlg application.
 
 ## Original language references
