@@ -27,6 +27,12 @@ The crate has no third-party dependencies and can be embedded in Rust applicatio
 
 The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
 
+## Original language references
+
+- [VisuAlg 3.0 project archive and documentation files](https://sourceforge.net/projects/visualg30/files/)
+
+The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
+
 ## Source example
 
 ```alg
