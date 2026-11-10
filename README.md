@@ -1,8 +1,31 @@
-# Portugol VisuAlg Interpreter
+<p align="center">
+  <img src="https://diegopn.github.io/potoo-site/src/assets/images/language-interpreter-icon.svg?v=1c651ca7" alt="Potoo IDE language interpreter icon" width="120" />
+</p>
 
-A reusable Rust interpreter library for the classic Portugol VisuAlg 3.0.5.2 pseudolanguage. It has no third-party dependencies and can be embedded in Rust applications; it includes a standalone terminal command-line runner.
+<h1 align="center">Portugol VisuAlg Interpreter</h1>
 
-The compatibility target is classic VisuAlg 3.0.5.2. The linked online archive labels the manual pages 3.0.5.2, while the built-in functions page identifies its catalog as VisuAlg 2.0, so the source version is not fully consistent. Compatibility testing is ongoing; the crate does not invoke or bundle the original VisuAlg application.
+<p align="center">A Rust interpreter library and CLI for the classic VisuAlg 3.0.5.2 pseudolanguage.</p>
+
+<p align="center">
+  <a href="https://github.com/diegopn/potoo-portugol-visualg-interpreter/releases/latest">Download</a> ·
+  <a href="https://diegopn.github.io/potoo-site/">Website</a> ·
+  <a href="https://diegopn.github.io/potoo-site/manual/visualg/">User manual</a>
+</p>
+
+<p align="center">
+  <a href="https://www.rust-lang.org/"><img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"></a>
+  <a href="https://doc.rust-lang.org/cargo/"><img alt="Cargo" src="https://img.shields.io/badge/Cargo-DEA584?style=for-the-badge&logo=rust&logoColor=white"></a>
+  <img alt="Rust library" src="https://img.shields.io/badge/Rust_library-4A86CF?style=for-the-badge">
+  <img alt="CLI" src="https://img.shields.io/badge/CLI-6A4C93?style=for-the-badge">
+</p>
+
+The crate has no third-party dependencies and can be embedded in Rust applications. The compatibility target is classic VisuAlg 3.0.5.2. The linked online archive labels its manual pages 3.0.5.2, while the built-in functions page identifies its catalog as VisuAlg 2.0, so the source version is not fully consistent. Compatibility testing is ongoing; the crate does not invoke or bundle the original VisuAlg application.
+
+## Original language references
+
+- [VisuAlg 3.0 project archive and documentation files](https://sourceforge.net/projects/visualg30/files/)
+
+The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
 
 ## Original language references
 
@@ -94,8 +117,17 @@ cargo check
 cargo test
 ~~~
 
+## Support
+
+If this interpreter is useful in your work, you can support its continued development:
+
+<p align="left">
+  <a href="https://github.com/sponsors/diegopn"><img alt="Become a sponsor" src="https://img.shields.io/badge/Become_a_sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
+</p>
+
 ## Project policies
 
+- [Code of conduct](CODE_OF_CONDUCT.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [GPL-3.0-or-later license](LICENSE)
