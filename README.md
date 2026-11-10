@@ -27,12 +27,6 @@ The crate has no third-party dependencies and can be embedded in Rust applicatio
 
 The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
 
-## Original language references
-
-- [VisuAlg 3.0 project archive and documentation files](https://sourceforge.net/projects/visualg30/files/)
-
-The archive contains the original VisuAlg software and reference files. This repository provides an independent Rust implementation.
-
 ## Source example
 
 ```alg
@@ -117,6 +111,14 @@ cargo check
 cargo test
 ~~~
 
+## Support
+
+If this interpreter is useful in your work, you can support its continued development:
+
+<p align="left">
+  <a href="https://github.com/sponsors/diegopn"><img alt="Become a sponsor" src="https://img.shields.io/badge/Become_a_sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
+</p>
+
 ## Project policies
 
 - [Code of conduct](CODE_OF_CONDUCT.md)
@@ -199,14 +201,6 @@ potoo-visualg-interpreter = { git = "https://github.com/diegopn/potoo-portugol-v
 ```
 
 The library API lets Rust applications provide their own `RuntimeIo` implementation.
-
-## Support
-
-If this interpreter is useful in your work, you can support its continued development:
-
-<p align="left">
-  <a href="https://github.com/sponsors/diegopn"><img alt="Become a sponsor" src="https://img.shields.io/badge/Become_a_sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
-</p>
 
 ## DOI and citation
 
