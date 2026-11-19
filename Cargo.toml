@@ -1,6 +1,6 @@
 [package]
 name = "potoo-visualg-interpreter"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reusable Portugol VisuAlg 3.0.5.2 interpreter for Rust applications"
 license = "GPL-3.0-or-later"
 readme = "README.md"
